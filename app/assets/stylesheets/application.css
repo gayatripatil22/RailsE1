@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+table,th,td{
+     border: 3px solid rgb(0, 0, 0);
+     padding: 20px;
+     border-collapse: collapse;
+     font-family: 'Times New Roman', Times, serif;
+     margin-left: 700px;
+     font-size: 20px;
+ }
+ body{
+     text-align: center;
+ }
+ th{
+     background-color: cornflowerblue;
+ }
+ .a{
+     color: blue;
+ }
+ .error{
+     color: red;
+ }
+ p{
+     border: 1px solid #ddd;
+ }
+.container{
+    display:inline-flex;
+}
+
+form{
+    border: 4px solid rgb(67, 118, 221);
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    height: 600px;
+    margin-left: 500px;
+    margin-top:200px;
+    background-color: rgb(193, 185, 237);
+}
+form:hover{
+    border: 6px solid rgb(210, 93, 93);
+}
+input[type=submit]{
+    background-color: rgb(51, 108, 138);
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+input[type=text]{
+    padding: 10px;
+
+}
+.field{
+    text-align: center;
+}
+.text{
+    display:grid;
+}
+.user{
+    color: rgb(19, 56, 124);
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type=submit]:hover{
+    border  : 4px solid rgb(242, 42, 42);
+}
+input:hover{
+    border: 3px solid rgb(102, 135, 201);
+}

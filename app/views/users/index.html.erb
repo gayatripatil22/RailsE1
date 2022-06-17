@@ -1,0 +1,28 @@
+
+<table>
+<h1 class = user>User Details </h1>
+<thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    
+</thead>
+<tbody>
+<% @users.each do |u| %>
+  <tr>
+      <td><%= u.name %></td>
+      <td><%= u.age %></td>
+      <td><%= u.gender %></td>
+    <td><%=link_to "Edit", edit_user_path(u) %></td>
+    <td><%= link_to "Destroy", user_path(u), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure want to delete?"
+                  } %></td>
+  </tr>
+  <% end %>
+</tbody>
+
+</table>
+<h1 class:a><%=link_to " Click Here For New user", new_user_path %></h1>
